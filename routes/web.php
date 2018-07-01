@@ -29,5 +29,11 @@ use Illuminate\Support\Facades\Cache;
    	Route::get('/', function () {return view('usuarios.panelAdmin');});
 	Route::get('/usuarios/panelAdmin', function () {return view('usuarios.panelAdmin');});
 	Route::get('/logout','usuariosController@logout');
+
+
+
+	Route::get('/personal', function () {return view('personal.create');});
+	Route::get('/personal/create','personalController@create');
+	Route::post('/personal/store','personalController@store');
 	
 

@@ -38,23 +38,13 @@
               <span class="hidden-xs">Hola, {{Session::get('nombres')}}</span>
               <img src="{{asset('images/faces/face6.jpg')}}" />
             </div>
-            <form class="form-inline mt-2 mt-md-0 d-none d-lg-block ml-lg-auto">
-                <input class="form-control search" type="text" placeholder="Search">
-            </form>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
-                        <i class="mdi mdi-bell-outline"></i>
-                        <span class="count bg-warning">7</span>
-                    </a>
-                </li>
-              
-            </ul>
+       
             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
                 <span class="mdi mdi-menu"></span>
               </button>
         </div>
     </nav>
+
 
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
@@ -63,77 +53,58 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
                 <!--main pages start-->
-                <li class="nav-item nav-category">
-                    <span class="nav-link">General</span>
-                </li>
-            
-              
                 <!--main pages end-->
                 <!--sample pages start-->
                 <li class="nav-item nav-category">
-                    <span class="nav-link">Sample pages</span>
+                    <span class="nav-link">Pàginas Principales</span>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" href="#authSubmenu" aria-expanded="false" aria-controls="collapseExample">
-                        <i class="mdi mdi-lock-outline"></i>
-                        <span class="menu-title">Authentication</span>
-                        <i class="mdi mdi-chevron-down"></i>
+                        <i class="mdi mdi-file"></i>
+                        <span class="menu-title">Archivos</span>
+                        <i class=""></i>
                     </a>
                     <div class="collapse" id="authSubmenu">
                         <ul class="nav flex-column sub-menu">
                           <li class="nav-item">
-                              <a class="nav-link" href="pages/samples/register.html">
-                            Register
+                              <a class="mdi mdi-account" href="pages/samples/register.html">
+                            Personal
                           </a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="pages/samples/register-2.html">
-                                Register 2
+                              <a class="mdi mdi-account-plus" href="pages/samples/register-2.html">
+                                Pacientes
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="pages/samples/login.html">
-                                Login
+                              <a class="mdi mdi-account-box" href="pages/samples/login.html">
+                                Contactos
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="pages/samples/login-2.html">
-                                Login 2
+                              <a class="mdi mdi-hospital-building" href="pages/samples/login-2.html">
+                               Centros Mèdicos
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="pages/samples/lock-screen.html">
-                                Lock screen
+                              <a class="mdi mdi-hospital" href="pages/samples/login-2.html">
+                               Centros Particulares
                               </a>
                           </li>
+                          <li class="nav-item">
+                              <a class="mdi mdi-message-text-outline" href="pages/samples/login-2.html">
+                               Laboratorios
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="mdi mdi-message-text" href="pages/samples/login-2.html">
+                               Analisis de Laboratorios
+                              </a>
+                          </li>
+                         
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#errorSubmenu" aria-expanded="false" aria-controls="collapseExample">
-                        <i class="mdi mdi-alert-circle-outline"></i>
-                        <span class="menu-title">Error pages</span>
-                        <i class="mdi mdi-chevron-down"></i>
-                    </a>
-                    <div class="collapse" id="errorSubmenu">
-                        <ul class="nav flex-column sub-menu">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/samples/error-404.html">
-                                    404
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/samples/error-500.html">
-                                    500
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-              
-               
-         
-              
           
             </ul>
         </nav>
